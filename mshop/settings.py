@@ -110,7 +110,7 @@ FILER_STORAGES = {
         'main': {
             'ENGINE': 'filer.storage.PublicFileSystemStorage',
             'OPTIONS': {
-                'location': 'D:\Django\mshop\media\\filer',
+                'location': '/home/letigang123/mshop/media/filer',
                 'base_url': '/media/filer/',
             },
             'UPLOAD_TO': 'filer.utils.generate_filename.randomized',
@@ -119,7 +119,7 @@ FILER_STORAGES = {
         'thumbnails': {
             'ENGINE': 'filer.storage.PublicFileSystemStorage',
             'OPTIONS': {
-                'location': 'D:\Django\mshop\media\\filer_thumbnails',
+                'location': '/home/letigang123/mshop/media/filer_thumbnails',
                 'base_url': '/media/filer_thumbnails/',
             },
         },
