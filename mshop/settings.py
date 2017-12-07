@@ -179,6 +179,6 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = "/home/letigang123/mshop/staticfiles/"
 
-MEDIA_URL = '/media/filer/'
-MEDIA_ROOT = '/home/letigang123/mshop/media/filer'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '/home/letigang123/mshop/media/'
 ACCOUNT_ACTIVATION_DAYS = 7
