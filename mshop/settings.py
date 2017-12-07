@@ -96,10 +96,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mshop.wsgi.application'
 
-# 支出视网膜高分辨率设备
 THUMBNALL_HIGH_RESOLUTION = True
 
-# 处理缩略图
 THUMBNAIL_PROCESSORS = (
     'easy_thumbnails.processors.colorspace',
     'easy_thumbnails.processors.autocrop',
