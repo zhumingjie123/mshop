@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '2%u6=70qbc1nipe_n2s2#d$ymx^z)5zf@7nvrvwoco##+5#*x7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
@@ -179,8 +179,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+STATIC_ROOT = "/home/letigang123/mshop/staticfiles/"
 
 MEDIA_URL = '/media/filer/'
-MEDIA_ROOT = 'D:\Django\mshop\media\\filer'
-STATIC_ROOT = 'D:\Django\mshop\staticfiles'
+MEDIA_ROOT = '/home/letigang123/mshop/media/filer'
 ACCOUNT_ACTIVATION_DAYS = 7
