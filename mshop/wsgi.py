@@ -8,9 +8,13 @@ https://docs.djangoproject.com/en/1.8/howto/deployment/wsgi/
 """
 
 import os
+import sys
 
+path = '/home/letigang123/mshop'
+if path not in sys.path:
+    sys.path.append(path)
+
+os.environ["DJANGO_SETTINGS_MODULE"] = 'mshop.settings'
 from django.core.wsgi import get_wsgi_application
-
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mshop.settings")
 
 application = get_wsgi_application()
