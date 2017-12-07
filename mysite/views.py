@@ -178,7 +178,7 @@ def payment(request, order_id):
         "item_name":"迷你小电商货品编号:{}".format(order_id),
         "invoice":"invoice-{}".format(order_id),
         "notify_url":"http://{}{}".format(host, reverse('paypal-ipn')),
-        "return-url":"http://{}/done/".format(host),
+        "return_url":"http://{}/done/".format(host),
         "cancel_return":"http://{}/canceled".format(host),
         }
     paypal_form = PayPalPaymentsForm(initial=paypal_dict)
